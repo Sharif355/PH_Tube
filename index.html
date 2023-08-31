@@ -12,9 +12,54 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-inter {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
   </head>
-  <body>
+  <body class="container mx-auto">
+    <!-- NavBar -->
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <img src="images/Logo.png" alt="" />
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a>BLOG</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-center">
+        <a class="btn btn-ghost normal-case text-lg font-inter font-medium"
+          >Sort by view</a
+        >
+      </div>
+      <div class="navbar-end">
+        <button
+          class="btn btn-ghost py-2 px-5 bg-[#FF1F3D] text-white hover:bg-red-400"
+        >
+          BLOG
+        </button>
+      </div>
+    </div>
+    <hr />
+    <div id="category-container" class="mt-8 flex justify-center"></div>
+    <!-- Card's -->
+    <div
+      id="card-container"
+      class="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10"
+    ></div>
     <!-- Script's -->
+
     <script src="script.js"></script>
   </body>
 </html>
