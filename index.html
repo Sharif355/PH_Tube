@@ -18,13 +18,26 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Google Icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <style>
       .font-inter {
         font-family: "Inter", sans-serif;
       }
+      .null-div-style {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
     </style>
   </head>
-  <body class="container mx-auto">
+  <body class="container lg:mx-auto">
     <!-- NavBar -->
     <div class="navbar bg-base-100">
       <div class="navbar-start">
@@ -39,27 +52,27 @@
         </div>
       </div>
       <div class="navbar-center">
-        <a class="btn btn-ghost normal-case text-lg font-inter font-medium"
+        <a
+          onclick="sortByView()"
+          class="btn bg-gray-100 normal-case text-lg font-inter font-medium"
           >Sort by view</a
         >
       </div>
       <div class="navbar-end">
-        <button
-          class="btn btn-ghost py-2 px-5 bg-[#FF1F3D] text-white hover:bg-red-400"
-        >
-          BLOG
+        <button class="btn py-2 px-5 bg-[#FF1F3D] text-white hover:bg-red-400">
+          <a href="http://127.0.0.1:5500/blog.html" target="_blank">BLOG</a>
         </button>
       </div>
     </div>
     <hr />
-    <div id="category-container" class="mt-8 flex justify-center"></div>
+    <div id="category-container" class="mt-8 flex gap-5 justify-center"></div>
     <!-- Card's -->
     <div
       id="card-container"
       class="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10"
     ></div>
-    <!-- Script's -->
 
+    <!-- Script's -->
     <script src="script.js"></script>
   </body>
 </html>
