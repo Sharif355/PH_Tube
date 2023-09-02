@@ -78,15 +78,15 @@
         <h1 class="text-3xl font-bold text-left py-4">var</h1>
         <ul class="pl-5">
           <li>
-            Scope of var is global or function level. Variable declared within a
+            => Scope of var is global or function level. Variable declared within a
             function has the function level scope otherwise global scope.
           </li>
           <li class="py-2">
-            Can be re-declared multiple times using var key word and same
+            => It can be re-declared multiple times using var key word and same
             variable name.
           </li>
           <li>
-            Value of variable declared using var can be updated anywhere within
+            => Value of variable declared using var can be updated anywhere within
             the scope.
           </li>
           .
@@ -116,19 +116,19 @@
         <h1 class="text-3xl font-bold text-left py-4">let</h1>
         <ul class="pl-5">
           <li>
-            Scope of let is block level. Here block is confined to the curly
+            => Scope of let is block level. Here block is confined to the curly
             braces ({ and } like function, if or for blocks etc.).
           </li>
           <li class="py-2">
-            Variables declared within curly braces can not be accessed from
+            =>Variables declared within curly braces can not be accessed from
             outside the respective scopes.
           </li>
           <li>
-            Can not be re-declared multiple times using let keyword and same
+            =>Can not be re-declared multiple times using let keyword and same
             variable name.
           </li>
           <li class="py-2">
-            Value of variables declared using let can also be updated anywhere
+            => Value of variables declared using let can also be updated anywhere
             within the scope
           </li>
         </ul>
@@ -166,19 +166,19 @@
         <h1 class="text-3xl font-bold text-left py-4">const</h1>
         <ul class="pl-5">
           <li>
-            Scope of const is same as let, block level. Here block is confined
+            =>Scope of const is same as let, block level. Here block is confined
             to the curly braces ({ and }).
           </li>
           <li class="py-2">
-            Variables declared within curly braces can not be accessed from
+           =>Variables declared within curly braces can not be accessed from
             outside the respective scopes.
           </li>
           <li>
-            Can not be re-declared multiple times using const keyword and same
+          =>Can not be re-declared multiple times using const keyword and same
             variable name.
           </li>
           <li class="py-2">
-            Value can not be updated once value is assigned to a const. But
+          =>Value can not be updated once value is assigned to a const. But
             properties can be updated.
           </li>
         </ul>
@@ -235,21 +235,12 @@
         <h1 class="text-3xl font-bold text-left py-4">Null</h1>
         <ul class="pl-5">
           <li>
-            Null is a special value that represents empty or non-existent value.
+           => Null is a special value that represents empty or non-existent value.
           </li>
           <li class="py-2">
-            Null is a primitive value and you can assign null to any variable.
+          => It is a primitive value and we can assign null to any variable.
           </li>
-          <li>Null is not an object and it doesn't have any method.</li>
-          <li class="py-2">
-            Null is a special value that represents empty or non-existent value.
-          </li>
-          <li>
-            Null is a primitive value and you can assign null to any variable.
-          </li>
-          <li class="py-2">
-            Null is not an object and it doesn't have any method.
-          </li>
+          
         </ul>
         <p class="py-2 text-xl">Sample Code:</p>
         <ul class="pl-5 border-2 border-black rounded-lg bg-white">
@@ -263,19 +254,19 @@
         <h1 class="text-3xl font-bold text-left py-4">Uses cases of Null</h1>
         <ul class="pl-5">
           <li>
-            Null is used to initialize a variable with an empty or non-existent
+            => Null is used to initialize a variable with an empty or non-existent
             value.
           </li>
           <!-- sample code -->
           <li class="p-5 border-2 border-black rounded-lg bg-white" >let myVariable = null;
           </li>
           <li class="py-2">
-            Null is used to assign an empty or non-existent value to a variable.
+            => Null is used to assign an empty or non-existent value to a variable.
           </li>
           <!-- sample code -->
           <li class="p-5 border-2 border-black rounded-lg bg-white" >let myVariable = document.querySelector('mySelector');
           <li>
-            Null is used to compare with undefined to check if a variable has
+            =>  Null is used to compare with undefined to check if a variable has
             null value.
           </li>
           <!-- sample code -->
@@ -287,14 +278,14 @@
         <h1 class="text-3xl font-bold text-left py-4">Undefined</h1>
         <ul class="pl-5">
           <li>
-            Undefined means a variable has been declared but has not yet been
+            => Undefined means a variable has been declared but has not yet been
             assigned a value.
           </li>
           <li class="py-2">
-            Undefined is a primitive value and you can assign undefined to any
+            => Undefined is a primitive value and you can assign undefined to any
             variable.
           </li>
-          <li>Undefined is not an object and it doesn't have any method.</li>
+          <li>=>Undefined is not an object and it doesn't have any method.</li>
         </ul>
         <p class="py-2 text-xl">Sample Code:</p>
         <ul class="pl-5 border-2 border-black rounded-lg bg-white">
@@ -308,7 +299,7 @@
         <h1 class="text-3xl font-bold text-left py-4">
           Uses cases of Undefined
         </h1>
-        <li class="py-2">Undefined can be used in a function to represent that an argument was not provided</li>
+        <li class="py-2">=>Undefined can be used in a function to represent that an argument was not provided</li>
         <!-- sample code -->
         <li class="p-5 border-2 border-black rounded-lg bg-white" >function myFunction(myArgument) {
           if (myArgument === undefined) {
@@ -317,13 +308,13 @@
           // ...
           }
         </li>
-        <li class="py-2">Undefined can be used to check if a variable has undefined value.</li>
+        <li class="py-2">=>Undefined can be used to check if a variable has undefined value.</li>
         <!-- sample code -->
         <li class="p-5 border-2 border-black rounded-lg bg-white" >if (myVariable === undefined) {
           // myVariable is undefined
           }
         </li>
-        <li class="py-2">Undefined can be used to check if a property exists in an object.</li>
+        <li class="py-2">=>Undefined can be used to check if a property exists in an object.</li>
         <!-- sample code -->
         <li class="p-5 border-2 border-black rounded-lg bg-white" >if (myObject.myProperty === undefined) {
           // myObject.myProperty is undefined
@@ -344,28 +335,21 @@
        />
        <h1 class="text-3xl font-bold text-left pb-2">REST </h1>
        <p class="text-left">
-         REST stands for Representational State Transfer. It is an architectural
+         REST stands for Representational State Transfer. It's an  architectural
          style that defines a set of rules in order to create Web Services.
          RESTful Web Services are Web Services that conform to the REST
-         architectural style. RESTful Web Services are basically REST
-         architecture based Web Services. In REST Architecture everything is a
-         resource. RESTful web services are light weight, highly scalable and
-         maintainable and are very commonly used to create APIs for web-based
-         applications.
+         architectural style. 
        </p>
        <h1 class="text-3xl font-bold text-left py-3">REST API</h1>
        <p class="text-left">
          REST API is a set of functions that helps developer perform requests
-         and receive responses via HTTP protocol such as GET and POST. REST API
-         is a set of functions that helps developer perform requests and
-         receive responses via HTTP protocol such as GET and POST.
+         and receive responses via HTTP protocol such as GET and POST.
        </p>
        <h1 class="text-3xl font-bold text-left  py-3">REST API Methods</h1>
        <p class="text-left ">
          REST API defines a set of functions which developers can perform
          requests and receive responses via HTTP protocol such as GET and POST.
-         REST API defines a set of functions which developers can perform
-         requests and receive responses via HTTP protocol such as GET and POST.
+         Here's Some example of REST API Methods: 
        </p>
        <h1 class="text-3xl font-bold text-left py-3">GET</h1>
        <p class="text-left pb-2">
